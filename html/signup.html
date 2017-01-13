@@ -1,0 +1,145 @@
+<html>
+<head>
+    <title>SignUp</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../semantic/dist/semantic.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../../semantic/dist/components/form.min.js"></script>
+    <script src="../../semantic/dist/semantic.min.js"></script>
+</head>
+<body id="signupbg">
+    <div class="ui stackable container">
+        <div class="ui large secondary top fixed menu inverted" id="signupmenu">
+            <div class="item">
+                <a href="../index.html"><img src="../image/logo.png" alt="logo" class="ui image logo"></a>
+            </div>
+        </div>
+        <h1 id="signup">Sign Up</h1>  
+            <div class="ui grid stackable">
+                <div class="ui eight wide column"  id="form">
+                    <div class="ui form">
+                        <div class="field">
+                            <input type="text" id="name" placeholder="Name">
+                        </div>
+                        <div class="field">
+                            <input type="Email" id="email" placeholder="Email Id">
+                        </div>
+                        <div class="field">
+                           
+                            <input type="text" id="mobile" placeholder="Mobile Number">
+                        </div>
+                        <div class="field">
+                            <input type="password" id="password" placeholder="Psssword">
+                        </div>
+                        <div class="field">
+                            <input type="password" id="confirmpassword" placeholder="confirm password">
+                        </div>
+                        <div class="ui primary submit button">Sign Up</div>
+                    </div>
+                </div>
+            </div>
+
+    <script type="text/javascript">
+        $('.ui.button').click(function()
+        {
+            $('.ui.form').form(
+                    {
+                        inline:true,
+                        on:'blur',
+                        fields:
+                        {
+                            name: 
+                            {
+                                    identifier: 'name',
+                                    rules: 
+                                [
+                                    {
+                                        type   : 'empty',
+                                        prompt : 'Please enter your Name'
+                                    },
+                                    {
+                                        type   :  'minLength[2]',
+                                        prompt : 'Name cannot be less than 2 characters'
+                                    }
+                                ]
+                            },
+                            email:
+                            {
+                                    identifier: 'email',
+                                    rules: 
+                                [
+                                    {
+                                        type   : 'empty',
+                                        prompt : 'Please enter your email'
+                                    },
+                                    {
+                                        type   :  'email',
+                                        prompt :  'Enter valid email address'
+                                    }
+                                ]
+                            },
+                            mobile:
+                            {
+                                    identifier: 'mobile',
+                                    rules:
+                                [
+                                    {
+                                        type : 'empty',
+                                        prompt :'please enter your mobile Number'
+                                    },
+                                    {
+                                        type : 'mobile',
+                                        prompt : 'Enter a valid mobile Number'
+                                    }
+                                ]
+                            },
+                            password:
+                    {
+                        identifier: 'password',
+                        rules: 
+                        [
+                            {
+                                type   : 'empty',
+                                prompt : 'Please enter your Password'
+                            },
+                            {
+                                type   :  'minLength[5]',
+                                prompt : 'Password cannot be less than 5 characters'
+                            },
+                            {
+                                type   :  'maxLength[15]',
+                                prompt : 'Password cannot be more than 15 characters'
+                            }
+                        ]
+                    },
+                    confirmpassword:
+                    {
+                        identifier: 'confirmpassword',
+                        rules: 
+                        [
+                            {
+                                type   : 'empty',
+                                prompt : 'Please retype Password'
+                            },
+                            {
+                                type   :  'minLength[5]',
+                                prompt : 'Passwords do not match'
+                            },
+                            {
+                                type   :  'maxLength[15]',
+                                prompt : 'Passwords do not match'
+                            },
+                            {
+                                type   :  'match[password]',
+                                prompt : 'Passwords do not match'
+                            }
+                        ]
+                    },   
+                        }
+                    }
+                )
+        }
+            )
+    </script>
+</body>
+</html>

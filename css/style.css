@@ -1,0 +1,89 @@
+	.bg{
+		background-image: url('../image/bg.jpg'); 
+		min-height: 700px;
+  		background-position: 50% 50%;
+   		background-repeat: no-repeat;
+   		background-size: auto;
+   		background-position: top;
+	}
+	#header{
+		background: rgba(0,0,0,0.4); 
+	}
+	#logo{
+		margin: 0;
+		padding-right: 0;
+	}
+	#togglemob{
+		margin: 0;
+		padding: 10px 5px 10px 15px;
+	}
+	.jumbotron{
+		padding: 15% 0 32% 0;
+	    text-align: center;
+	}
+	.jumbotron h1{
+		font-size: 50px;
+		font-family: 'Quicksand', sans-serif;
+	}
+	#form{
+		    background: rgba(0,0,0,0.3);
+		    margin: auto;
+	}
+	.ui.form{
+		padding: 30px;
+	}
+	.deal{
+		height: 305px;
+	}
+	.interoffer{
+		height: 365px;
+	}
+	h3{
+		font-size: 20px;
+	}
+	.desc{
+		background-color:black;
+		color: white;
+		font-size: 20px;
+		height: 60px;
+	}
+	.comiframe{
+		width: 100%;
+		height: 50%;
+	}
+	.lab{
+		font-size: 15px;
+	}
+	.ui.segment.cust{
+		background-image: url("../image/custservices.jpg");
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+	}
+	.ui.primary.button{
+		 background: rgba(0,0,0,0.3);
+		 width: 230px;
+	}
+	.ui.inverted.footer{
+		margin-top:20px;
+	}
+
+	#signupbg{
+		background-image: url('../image/signbg.jpeg'); 
+		min-height: 700px;
+  		background-position: 50% 50%;
+   		background-repeat: no-repeat;
+   		background-size: auto;
+   		background-position: top;
+   		color: white;
+   		text-align: center;
+	}
+	#signupmenu{
+		background: rgba(255,255,255,0.3);
+	}
+	#signup{
+		padding-top: 100px;
+	}
+	#check{
+		color: white;
+	}
